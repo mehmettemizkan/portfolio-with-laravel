@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/css/plugins/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/css/plugins/selectric.css">
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap-tagsinput.css">
+  <link rel="stylesheet" href="assets/css/plugins/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/daterangepicker.css">
+  <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="form-inline mr-auto"></div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html">Stisla</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">St</a>
+          </div>
+          <ul class="sidebar-menu">
+              <li class="menu-header">Dashboard</li>
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Dropdown</span></a>
+                <ul class="dropdown-menu" style="display: none;">
+                  <li><a class="nav-link" href="">test</a></li>
+
+                </ul>
+              </li>
+              <li class="menu-header">Starter</li>
+
+              <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
+              <li><a class="nav-link" href="features-post-create.html"><i class="far fa-square"></i> <span>Form Page</span></a></li>
+
+              <li><a class="nav-link" href="features-profile.html"><i class="far fa-square"></i> <span>Profile</span></a></li>
+
+              <li><a class="nav-link" href="auth-login.html"><i class="far fa-square"></i> <span>Login</span></a></li>
+              <li><a class="nav-link" href="auth-register.html"><i class="far fa-square"></i> <span>Register</span></a></li>
+              <li><a class="nav-link" href="auth-forgot-password.html"><i class="far fa-square"></i> <span>Forgot password</span></a></li>
+
+            </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Profile</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
+              <div class="breadcrumb-item">Profile</div>
+            </div>
+          </div>
+          <div class="section-body">
+            <h2 class="section-title">Hi, Ujang!</h2>
+            <p class="section-lead">
+              Change information about yourself on this page.
+            </p>
+
+            <div class="row mt-sm-4">
+              <div class="col-12 col-md-12 col-lg-5">
+                <div class="card profile-widget">
+                  <div class="profile-widget-header">
+                    <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle profile-widget-picture">
+                    <div class="profile-widget-items">
+                      <div class="profile-widget-item">
+                        <div class="profile-widget-item-label">Posts</div>
+                        <div class="profile-widget-item-value">187</div>
+                      </div>
+                      <div class="profile-widget-item">
+                        <div class="profile-widget-item-label">Followers</div>
+                        <div class="profile-widget-item-value">6,8K</div>
+                      </div>
+                      <div class="profile-widget-item">
+                        <div class="profile-widget-item-label">Following</div>
+                        <div class="profile-widget-item-value">2,1K</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-widget-description">
+                    <div class="profile-widget-name">Ujang Maman <div class="text-muted d-inline font-weight-normal"><div class="slash"></div> Web Developer</div></div>
+                    Ujang maman is a superhero name in <b>Indonesia</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.
+                  </div>
+                  <div class="card-footer text-center">
+                    <div class="font-weight-bold mb-2">Follow Ujang On</div>
+                    <a href="#" class="btn btn-social-icon btn-facebook mr-1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-social-icon btn-twitter mr-1">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-social-icon btn-github mr-1">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="btn btn-social-icon btn-instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-7">
+                <div class="card">
+                  <form method="post" class="needs-validation" novalidate="">
+                    <div class="card-header">
+                      <h4>Edit Profile</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                          <div class="form-group col-md-6 col-12">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" value="Ujang" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the first name
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6 col-12">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" value="Maman" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the last name
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-md-7 col-12">
+                            <label>Email</label>
+                            <input type="email" class="form-control" value="ujang@maman.com" required="">
+                            <div class="invalid-feedback">
+                              Please fill in the email
+                            </div>
+                          </div>
+                          <div class="form-group col-md-5 col-12">
+                            <label>Phone</label>
+                            <input type="tel" class="form-control" value="">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <label>Bio</label>
+                            <textarea class="form-control summernote-simple">Ujang maman is a superhero name in <b>Indonesia</b>, especially in my family. He is not a fictional character but an original hero in my family, a hero for his children and for his wife. So, I use the name as a user in this template. Not a tribute, I'm just bored with <b>'John Doe'</b>.</textarea>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group mb-0 col-12">
+                            <div class="custom-control custom-checkbox">
+                              <input type="checkbox" name="remember" class="custom-control-input" id="newsletter">
+                              <label class="custom-control-label" for="newsletter">Subscribe to newsletter</label>
+                              <div class="text-muted form-text">
+                                You will get new information about products, offers and promotions
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right">
+                      <button class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+        </div>
+        <div class="footer-right">
+          2.3.0
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="../assets/js/stisla.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="assets/js/plugins/summernote-bs4.js"></script>
+  <script src="assets/js/plugins/jquery.selectric.min.js"></script>
+  <script src="assets/js/plugins/jquery.uploadPreview.min.js"></script>
+  <script src="assets/js/plugins/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/js/plugins/bootstrap-timepicker.min.js"></script>
+  <script src="assets/js/plugins/daterangepicker.js"></script>
+  <script src="assets/js/plugins/select2.full.min.js"></script>
+
+
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/features-post-create.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+</body>
+</html>
+
