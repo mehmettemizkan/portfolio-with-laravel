@@ -25,9 +25,16 @@
                                 @csrf
                                 @method('PUT')
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Name</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title</label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="text" value="{{ $service->name }}" name="name"
+                                        <input type="text" value="{{ $service->title }}" name="title"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Subtitle</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" value="{{ $service->sub_title }}" name="sub_title"
                                             class="form-control">
                                     </div>
                                 </div>

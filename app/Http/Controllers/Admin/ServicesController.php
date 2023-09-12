@@ -32,11 +32,13 @@ class ServicesController extends Controller
     {
         // dd($request->all());
         $request->validate([
-            'name' => ['required', 'max:100'],
-            'description' => ['required', 'max:500'],
+            'title' => ['required', 'max:100'],
+            'sub_title' => ['required', 'max:300'],
+            'description' => ['required', 'max:800'],
         ]);
         $createService = new Service();
-        $createService->name = $request->name;
+        $createService->title = $request->title;
+        $createService->sub_title = $request->sub_title;
         $createService->description = $request->description;
         $createService->save();
 
@@ -67,11 +69,13 @@ class ServicesController extends Controller
     public function update(Request $request, string $id)
     {
         $request->validate([
-            'name' => ['required', 'max:100'],
-            'name' => ['required', 'max:2000'],
+            'title' => ['required', 'max:100'],
+            'sub_title' => ['required', 'max:300'],
+            'description' => ['required', 'max:800'],
         ]);
         $service = Service::findOrFail($id);
-        $service->name = $request->name;
+        $service->title = $request->title;
+        $service->sub_title = $request->sub_title;
         $service->description = $request->description;
         $service->save();
 
@@ -84,6 +88,7 @@ class ServicesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $service = Service::findOrFail($id);
+        $service->delete();
     }
 }

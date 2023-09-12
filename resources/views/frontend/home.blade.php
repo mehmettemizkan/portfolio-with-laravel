@@ -1,9 +1,9 @@
 @extends('frontend.layouts.layout')
 
 @section('content')
-    <!-- Header-Area-Start -->
+    <!-- Hero-Area-Start -->
     @include('frontend.sections.hero')
-    <!-- Header-Area-End -->
+    <!-- Hero-Area-End -->
 
     <!-- Service-Area-Start -->
     @include('frontend.sections.service')

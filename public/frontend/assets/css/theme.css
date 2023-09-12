@@ -1444,6 +1444,7 @@ Footer-Area
     padding: 25px;
     background: #f3f7ff;
     border-radius: 10px;
+    height: 50px !important;
 }
 
 .header-text a.button-dark.mouse-dir {

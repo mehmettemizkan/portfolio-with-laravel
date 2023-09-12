@@ -66,7 +66,8 @@ class ServiceDataTable extends DataTable
     {
         return [
             Column::make('id'),
-            Column::make('name'),
+            Column::make('title'),
+            Column::make('sub_title'),
             Column::make('description'),
             Column::computed('action')
                 ->exportable(false)
