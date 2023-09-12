@@ -1,16 +1,5 @@
 @charset "UTF-8";
-/**
- * Stisla
- *
- * Stisla is a clean & modern HTML5 admin template based on Bootstrap 4.
- * Stisla will make it easier for you to create your own admin interface.
- *
- * @package Stisla
- * @version 2.3.0
- * @author  Muhamad Nauval Azhar & Team
- * @url   https://getstisla.com
- *
- */
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir.eot");
@@ -18,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Bold.eot");
@@ -25,6 +15,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Black.eot");
@@ -32,6 +23,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Medium.eot");
@@ -39,6 +31,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Light.eot");
@@ -46,6 +39,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: Vazir;
   src: url("../fonts/vazir/Vazir-Thin.eot");
@@ -53,7 +47,9 @@
   font-weight: 100;
   font-style: normal;
 }
-body, html {
+
+body,
+html {
   direction: rtl;
   font-family: Vazir, Tahoma, Arial;
 }
@@ -66,7 +62,20 @@ body, html {
   direction: rtl;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, span, input, textarea, select, option, label {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+input,
+textarea,
+select,
+option,
+label {
   font-family: Vazir, Tahoma, Arial;
 }
 
@@ -83,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, input, textarea, select, option, label {
 .section .section-header {
   font: normal normal 24px "IRANSans Bold";
 }
+
 .section .section-header div {
   float: right;
 }
@@ -130,23 +140,28 @@ body.sidebar-mini .main-sidebar:after {
 body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu li.active ul.dropdown-menu li a {
   padding-left: 0;
 }
-body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu {
+
+body.sidebar-mini .main-sidebar .sidebar-menu>li ul.dropdown-menu {
   left: auto;
   right: 65px;
 }
+
 body.layout-2 .main-sidebar .sidebar-menu li a.has-dropdown::after {
   left: 0;
   right: auto;
 }
-body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu > li.active > a::before {
+
+body:not(.sidebar-mini) .sidebar-style-2 .sidebar-menu>li.active>a::before {
   right: 0;
 }
+
 body.layout-2 .main-content {
   padding-top: 107px;
   padding-right: 30px;
   padding-left: 0;
   width: calc(100% - 200px);
 }
+
 body.layout-2 .main-sidebar .sidebar-menu li ul.dropdown-menu li a {
   padding-right: 34px;
   padding-left: 0;
@@ -161,10 +176,13 @@ body.sidebar-mini .navbar {
   right: 65px;
   left: 0px;
 }
-body.sidebar-mini .main-content, body.sidebar-mini .main-footer {
+
+body.sidebar-mini .main-content,
+body.sidebar-mini .main-footer {
   padding-right: 90px;
   padding-left: 30px;
 }
+
 body.layout-2 .main-footer {
   margin-right: 230px;
   width: calc(100% - 230px);
@@ -184,7 +202,10 @@ body.layout-2 .main-footer {
   direction: ltr;
 }
 
-.btn.btn-icon-split i, .dropdown-item.has-icon i, .btn.btn-icon-split i, .dropdown-item.has-icon i {
+.btn.btn-icon-split i,
+.dropdown-item.has-icon i,
+.btn.btn-icon-split i,
+.dropdown-item.has-icon i {
   text-align: center;
   width: 15px;
   font-size: 15px;
@@ -207,13 +228,18 @@ body.layout-2 .navbar {
   text-align: center;
 }
 
-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion, a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas, a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far, a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal, a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal,
+a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   margin: 4px;
 }
 
 .dropdown-list .dropdown-item .dropdown-item-avatar {
   float: right;
 }
+
 .dropdown-list .dropdown-item .dropdown-item-desc {
   margin-right: 60px;
   margin-left: 0;
@@ -226,31 +252,38 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion, a:not(.btn-social
 body.sidebar-gone .main-sidebar {
   right: -250px;
 }
+
 body.sidebar-gone .main-content {
   padding-right: 30px;
 }
+
 body.sidebar-gone .navbar {
   right: 0;
 }
 
-.card.card-sm-3 .card-icon, .card.card-sm-4 .card-icon {
+.card.card-sm-3 .card-icon,
+.card.card-sm-4 .card-icon {
   float: right;
   margin-left: 15px;
   margin-right: 10px;
 }
+
 .card.card-sm .card-icon {
   float: right;
   text-align: left;
   padding-left: 15px;
 }
+
 .card.card-sm .card-options {
   float: left;
   margin-left: 20px;
 }
+
 .card.card-sm .card-wrap {
   margin-right: 30px;
   margin-left: 15px;
 }
+
 .card.card-sm-2 .card-icon {
   left: 20px;
   right: auto;
@@ -260,11 +293,14 @@ body.sidebar-gone .navbar {
   float: left;
 }
 
-.card .card-header h4 + .card-header-action, .card .card-header h4 + .card-header-form {
+.card .card-header h4+.card-header-action,
+.card .card-header h4+.card-header-form {
   margin-right: auto;
   margin-left: 0px;
 }
-.card .card-header h4 + .card-header-action .btn-group .btn:first-child, .card .card-header h4 + .card-header-form .btn-group .btn:first-child {
+
+.card .card-header h4+.card-header-action .btn-group .btn:first-child,
+.card .card-header h4+.card-header-form .btn-group .btn:first-child {
   border-radius: 0 30px 30px 0 !important;
 }
 
@@ -273,7 +309,8 @@ body.sidebar-gone .navbar {
   margin-right: 0;
 }
 
-.card.card-statistic-1 .card-icon, .card.card-statistic-2 .card-icon {
+.card.card-statistic-1 .card-icon,
+.card.card-statistic-2 .card-icon {
   float: right;
 }
 
@@ -294,7 +331,8 @@ body.sidebar-gone .navbar {
   font-size: 16px;
 }
 
-.card.card-sm-3 .card-header h4, .card.card-sm-4 .card-header h4 {
+.card.card-sm-3 .card-header h4,
+.card.card-sm-4 .card-header h4 {
   letter-spacing: 0;
   font-family: Vazir, Tahoma, Arial;
 }
@@ -314,13 +352,15 @@ body.sidebar-gone .navbar {
   margin-bottom: -5px;
 }
 
-body.layout-2 .main-footer, body.layout-3 .main-footer {
+body.layout-2 .main-footer,
+body.layout-3 .main-footer {
   background-color: transparent;
   box-shadow: none;
   margin-bottom: -5px;
 }
 
-.btn.btn-icon-split i, .dropdown-item.has-icon i {
+.btn.btn-icon-split i,
+.dropdown-item.has-icon i {
   font-size: 15px !important;
   float: right !important;
   margin: 0px !important;
@@ -330,6 +370,7 @@ body.layout-2 .main-footer, body.layout-3 .main-footer {
 .navbar .form-inline .search-result::before {
   right: 34px;
 }
+
 .navbar .form-inline .form-control {
   padding-right: 20px;
   padding-left: 0;
@@ -337,6 +378,7 @@ body.layout-2 .main-footer, body.layout-3 .main-footer {
   margin-right: inherit;
   border-radius: 0 3px 3px 0px;
 }
+
 .navbar .form-inline .btn {
   border-radius: 3px 0 0 3px;
   padding: 9px 15px;
@@ -356,11 +398,12 @@ body.layout-2 .main-footer, body.layout-3 .main-footer {
   margin-right: auto;
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.breadcrumb-item+.breadcrumb-item {
   padding-right: 0.5rem;
   padding-left: 0;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+
+.breadcrumb-item+.breadcrumb-item::before {
   padding-left: 0.5rem;
   padding-right: 0;
   display: inline-block;
@@ -374,11 +417,12 @@ body.layout-2 .main-footer, body.layout-3 .main-footer {
   margin-right: 0;
 }
 
-body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link.has-dropdown {
+body.layout-3 .navbar.navbar-secondary .navbar-nav>.nav-item>.nav-link.has-dropdown {
   margin-left: 35px;
   margin-right: 0;
 }
-body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link.has-dropdown::after {
+
+body.layout-3 .navbar.navbar-secondary .navbar-nav>.nav-item>.nav-link.has-dropdown::after {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -386,7 +430,8 @@ body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item > .nav-link.has-d
   right: unset;
   left: -20px;
 }
-body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item.active > .nav-link::before {
+
+body.layout-3 .navbar.navbar-secondary .navbar-nav>.nav-item.active>.nav-link::before {
   right: 35px;
   left: 0;
 }
@@ -394,11 +439,12 @@ body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item.active > .nav-lin
 .dropdown-menu-left {
   right: 0;
 }
+
 .dropdown-menu-left .dropdown-menu-left {
   right: 100%;
 }
 
-body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item .dropdown-menu .nav-item .nav-link.has-dropdown::after {
+body.layout-3 .navbar.navbar-secondary .navbar-nav>.nav-item .dropdown-menu .nav-item .nav-link.has-dropdown::after {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -414,34 +460,48 @@ body.layout-3 .navbar.navbar-secondary .navbar-nav > .nav-item .dropdown-menu .n
   left: 0;
 }
 
-.card .card-header h4 + .card-header-action .btn-group .btn:last-child, .card .card-header h4 + .card-header-form .btn-group .btn:last-child {
+.card .card-header h4+.card-header-action .btn-group .btn:last-child,
+.card .card-header h4+.card-header-form .btn-group .btn:last-child {
   border-radius: 30px 0 0 30px !important;
 }
 
-.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
   border-radius: 0 5px 5px 0;
 }
-.input-group > .input-group-append:not(:last-child) > .btn, .input-group > .input-group-append:not(:last-child) > .input-group-text {
+
+.input-group>.input-group-append:not(:last-child)>.btn,
+.input-group>.input-group-append:not(:last-child)>.input-group-text {
   border-radius: 0 5px 5px 0;
 }
-.input-group > .input-group-prepend > .btn, .input-group > .input-group-prepend > .input-group-text {
+
+.input-group>.input-group-prepend>.btn,
+.input-group>.input-group-prepend>.input-group-text {
   border-radius: 0 5px 5px 0;
 }
-.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child) {
+
+.input-group>.custom-select:not(:first-child),
+.input-group>.form-control:not(:first-child) {
   border-radius: 5px 0 0 5px;
 }
 
-.card .card-header h4 + .card-header-action .input-group .form-control, .card .card-header h4 + .card-header-form .input-group .form-control {
+.card .card-header h4+.card-header-action .input-group .form-control,
+.card .card-header h4+.card-header-form .input-group .form-control {
   border-radius: 0 30px 30px 0 !important;
 }
-.card .card-header h4 + .card-header-action .input-group .form-control + .input-group-btn .btn, .card .card-header h4 + .card-header-form .input-group .form-control + .input-group-btn .btn {
+
+.card .card-header h4+.card-header-action .input-group .form-control+.input-group-btn .btn,
+.card .card-header h4+.card-header-form .input-group .form-control+.input-group-btn .btn {
   border-radius: 30px 0 0 30px !important;
 }
 
-.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child) {
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:not(:first-child) {
   border-radius: 5px 0px 0px 5px;
 }
-.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
   border-radius: 0px 5px 5px 0px;
 }
 

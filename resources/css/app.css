@@ -1,3 +1,13 @@
+/* Fonts */
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+/* DataTables */
+/* @import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import 'datatables.net-select-bs5/css/select.bootstrap5.css'; */
+@import url('https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
