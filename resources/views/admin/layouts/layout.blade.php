@@ -74,6 +74,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="{{ asset('assets/js/plugins/summernote-bs4.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/summernote-bs4.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.selectric.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/jquery.uploadPreview.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/bootstrap-tagsinput.min.js') }}"></script>
@@ -94,6 +95,8 @@
     <script src="{{ asset('assets/js/page/forms-advanced-forms.js') }}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 
 
 

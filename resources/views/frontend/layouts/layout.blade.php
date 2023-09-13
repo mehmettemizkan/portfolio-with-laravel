@@ -12,16 +12,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/style-plugin-collection.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/theme.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/responsive.css') }}">
-    <style>
-        .single-service {
-            box-sizing: border-box;
-            /* Additional styling for your single-service div */
-            /* For example, you can set width, padding, and border properties here */
-            width: 100%;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
-    </style>
+
 </head>
 
 <body>
