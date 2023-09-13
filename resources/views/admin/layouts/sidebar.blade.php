@@ -4,17 +4,17 @@
     <ul class="navbar-nav navbar-right">
         <li class="dropdown"><a href="#" data-toggle="dropdown"
                 class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
+                <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle m-auto">
+                <div class="d-sm-none d-lg-inline-block">Hi, admin</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-title">Logged in 5 min ago</div>
+                {{-- <div class="dropdown-title">Logged in 5 min ago</div> --}}
                 <a href="{{ route('profile.edit') }}" class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
-                <a href="features-settings.html" class="dropdown-item has-icon">
+                {{-- <a href="#" class="dropdown-item has-icon">
                     <i class="fas fa-cog"></i> Settings
-                </a>
+                </a> --}}
                 <div class="dropdown-divider"></div>
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
@@ -33,10 +33,10 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">M.T.</a>
+            <a href="{{ route('dashboard') }}">M.T.</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
+            <a href="index.html">M.T.</a>
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>

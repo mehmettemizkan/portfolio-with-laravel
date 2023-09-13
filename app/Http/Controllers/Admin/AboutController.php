@@ -12,10 +12,10 @@ class AboutController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(AboutDataTable $aboutTable)
+    public function index()
     {
-
-        return $aboutTable->render('admin.about.index');
+        $about = About::first();
+        return view('admin.about.index', compact('about'));
     }
 
     /**
@@ -57,8 +57,8 @@ class AboutController extends Controller
     {
         $request->validate([
             'title' => ['required', 'max:200'],
-            'description' => ['required', 'max:1000'],
-            'image' => ['required', 'image'],
+            'description' => ['required', 'max:5000'],
+            'image' => ['image', 'max:5000'],
             'resume' => ['mimes:pdf,csv,txt', 'max:10000'],
         ]);
 
@@ -86,5 +86,11 @@ class AboutController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function resumeDownload()
+    {
+        $about = About::first();
+        return response()->download(public_path($about->resume));
     }
 }

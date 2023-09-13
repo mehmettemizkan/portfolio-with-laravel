@@ -68,7 +68,10 @@ class AboutDataTable extends DataTable
                 ->width(200)
                 ->addClass('text-center'),
             Column::make('id'),
-            Column::make('add your columns'),
+            Column::make('title'),
+            Column::make('description'),
+            Column::make('image'),
+            Column::make('resume'),
             Column::make('created_at'),
             Column::make('updated_at'),
         ];
