@@ -4,9 +4,9 @@
     <section class="section">
         <div class="section-header">
             <div class="section-header-back">
-                <a href="{{ route('dashboard') }}" class="btn btn-icon"><i class="fas fa-arrow-left"></i></a>
+                <a href="{{ route('admin.category.index') }}" class="btn btn-icon"><i class="fas fa-arrow-left"></i></a>
             </div>
-            <h1>Typer Title Edit</h1>
+            <h1>Portfolio Category</h1>
 
         </div>
 
@@ -17,26 +17,23 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Typer Title Edit</h4>
+                            <h4>Create a Category</h4>
                         </div>
                         <div class="card-body">
-                            <form action="{{ route('admin.typer-title.update', $title->id) }}" method="POST"
-                                enctype="multipart/form-data">
+                            <form action="{{ route('admin.category.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
-                                @method('PUT')
                                 <div class="form-group row mb-4">
-                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Edit
-                                        Title</label>
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Name
+                                    </label>
                                     <div class="col-sm-12 col-md-7">
-                                        <input type="text" value="{{ $title->title }}" name="title"
-                                            class="form-control">
+                                        <input type="text" name="name" class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="form-group row mb-4">
                                     <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
                                     <div class="col-sm-12 col-md-7">
-                                        <button class="btn btn-primary">Update</button>
+                                        <button class="btn btn-primary">Create</button>
                                     </div>
                                 </div>
                             </form>

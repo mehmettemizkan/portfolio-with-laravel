@@ -48,7 +48,7 @@
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i>
                     <span>Dropdown</span></a>
                 <ul class="dropdown-menu" style="display: none;">
-                    <li><a class="nav-link" href="">test</a></li>
+                    <li><a class="#" href="">test</a></li>
 
                 </ul>
             </li>
@@ -62,10 +62,26 @@
 
                 </ul>
             </li>
-            <li><a class="nav-link" href="{{ route('admin.services.index') }}"><i class="far fa-square"></i>
-                    <span>Services</span></a></li>
+            <li>
+                <a class="nav-link" href="{{ route('admin.services.index') }}">
+                    <i class="far fa-square"></i><span>Services</span>
+                </a>
+            </li>
             <li><a class="nav-link" href="{{ route('admin.about.index') }}"><i class="far fa-square"></i>
-                    <span>About</span></a></li>
+                    <span>About</span></a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i>
+                    <span>Portfolio</span></a>
+                <ul class="dropdown-menu" style="display: none;">
+                    <li><a class="nav-link" href="{{ route('admin.category.index') }}">Category</a></li>
+                    <li><a class="nav-link" href="{{ route('admin.hero.index') }}">Hero Section</a></li>
+
+                </ul>
+            </li>
+
+
             {{-- <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li> --}}
 
 
