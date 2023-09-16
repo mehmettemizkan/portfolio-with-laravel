@@ -20,3 +20,16 @@ function handleUpload($inputName, $model = null)
         throw $e;
     }
 }
+
+/* Delete Files of Deleted Data */
+
+function deleteFileIfExist($filePath)
+{
+    try {
+        if (\File::exists(public_path($filePath))) {
+            \Fİle::delete(public_path($filePath));
+        }
+    } catch (\Exception $e) {
+        throw $e;
+    }
+}
