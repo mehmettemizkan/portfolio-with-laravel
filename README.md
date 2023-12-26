@@ -19,3 +19,11 @@
 <img width="842" alt="Ekran Resmi 2023-12-26 17 44 45" src="https://github.com/mehmettemizkan/portfolio/assets/56386597/457daf86-fbab-4990-9f42-8e8275081b97"><br>
 codes from the route -> auth.php file in the main folder into the comment line.
 
+## Create a User
+- Open the database -> factories -> UserFactory.php
+    - Set user's information in the definition function.
+- Open the database -> seeders -> DatabaseSeeder.php
+    - Write <code>User::factory(1)-> create();</code> in the run function.
+- Open the terminal in project and write this: <code>php artisan db:seed</code>
+- Check your users table in the database. If you see a screen like the one below, you are proceeding correctly.
+<img width="1338" alt="Ekran Resmi 2023-12-26 18 15 55" src="https://github.com/mehmettemizkan/portfolio/assets/56386597/8093affc-71d2-4f1c-8e44-55c3b0771f5e">
